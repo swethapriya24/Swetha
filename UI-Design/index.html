@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <title>UI Design</title>
+    <link rel="shortcut icon" type="image/ico" href="favicon.png">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href='css/index.css' rel='stylesheet'>
+    <style></style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-default navbar-fixed-top menu-background">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand logo-align" href="#">
+              <img src="images/logo.png" alt="logo" class="img-responsive">
+            </a>
+            <ul class="nav navbar-nav navbar-right icon-mobile visible-xs">
+              <li>
+                <div class="search-box">
+                  <input type="text" class="search-txt" placeholder="Search">
+                  <a class="search-btn">
+                    <i class="fa fa-search"></i>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-bell"></i>
+                </a>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                  <span class="profile">DR</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="index.html">Logout</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-center">
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">About <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="index.html">About 1</a>
+                  </li>
+                  <li>
+                    <a href="index.html">About 2</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right hidden-xs">
+              <li>
+                <div class="search-box">
+                  <input type="text" class="search-txt" placeholder="Search">
+                  <a class="search-btn">
+                    <i class="fa fa-search"></i>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-bell"></i>
+                </a>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle p-l-0" data-toggle="dropdown" href="#">
+                  <span class="profile">DR</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="index.html">Logout</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div id="myCarousel" class="carousel slide">
+      <!-- Wrapper for Slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <!-- Set the first background image using inline CSS below. -->
+          <div class="fill" style="background-image:url('images/banner1.jpg')"></div>
+          <div class="carousel-caption">
+            <p>Order Summary : Orders#1 Billed Amount #2500$</p>
+          </div>
+        </div>
+        <div class="item">
+          <!-- Set the second background image using inline CSS below. -->
+          <div class="fill" style="background-image:url('images/banner2.jpg');"></div>
+          <div class="carousel-caption">
+            <p>Order Summary : Orders#2 Billed Amount #2500$</p>
+          </div>
+        </div>
+        <div class="item">
+          <!-- Set the third background image using inline CSS below. -->
+          <div class="fill" style="background-image:url('images/banner3.jpg');"></div>
+          <div class="carousel-caption">
+            <p>Order Summary : Orders#3 Billed Amount #2500$</p>
+          </div>
+        </div>
+      </div>
+      <!-- Controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="icon-prev"></span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="icon-next"></span>
+      </a>
+    </div>
+    <div class="container-fluid">
+      <div class="row section-align">
+        <div class="col-md-3 p-lr-0">
+          <ul id="progressbar">
+            <li class="active" id="product">
+              <div>Product</div>
+            </li>
+            <li id="review">
+              <div>Review</div>
+            </li>
+            <li id="payment">
+              <div>Payment</div>
+            </li>
+            <li id="summary">
+              <div>Summary</div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-9">
+          <div id="product-detail" class="boxshadow">
+            <!-- progressbar -->
+            <fieldset>
+              <div class="row">
+                <div class="col-md-3">
+                  <img src="images/book.jpg" alt="book" class="img-responsive book-size">
+                </div>
+                <div class="col-md-9 pdn-left-0">
+                  <div>
+                    <h4 class="title"> Magic pratice book for kids (4 book + 1 Pen + 10 refills + 1 grip) pratice copy book reusable calligraphyMagic pratice book for kids (4 book + 1 pen + 10 refills + 1 grip) pratice copy book reusable calligraphy </h4>
+                    <p>
+                      <small>In stock</small>
+                    </p>
+                    <p>Gift options not available. <a href="#">more view</a>
+                    </p>
+                    <p>Return window closed on 06-Dec-2022</p>
+                    <p>
+                      <i class="fa fa-inr"></i> 253.00
+                    </p>
+                    <div class="row">
+                      <div class="col-md-4">
+                        <select class="form-control">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                        </select>
+                      </div>
+                      <div class="col-md-8">
+                        <ul class="user-option">
+                          <li>
+                            <a href="#">Delete</a>
+                          </li>
+                          <li>
+                            <a href="#">Save to later</a>
+                          </li>
+                          <li>
+                            <a href="#">See more like this</a>
+                          </li>
+                          <li>
+                            <a href="#">Share</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-md-3">
+                  <img src="images/book.jpg" alt="book" class="img-responsive book-size">
+                </div>
+                <div class="col-md-9 pdn-left-0">
+                  <div>
+                    <h4 class="title"> Magic pratice book for kids (4 book + 1 Pen + 10 refills + 1 grip) pratice copy book reusable calligraphyMagic pratice book for kids (4 book + 1 pen + 10 refills + 1 grip) pratice copy book reusable calligraphy </h4>
+                    <p>
+                      <small>In stock</small>
+                    </p>
+                    <p>Gift options not available. <a href="#">more view</a>
+                    </p>
+                    <p>Return window closed on 06-Dec-2022</p>
+                    <p>
+                      <i class="fa fa-inr"></i> 253.00
+                    </p>
+                    <div class="row">
+                      <div class="col-md-4">
+                        <select class="form-control">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                        </select>
+                      </div>
+                      <div class="col-md-8">
+                        <ul class="user-option">
+                          <li>
+                            <a href="#">Delete</a>
+                          </li>
+                          <li>
+                            <a href="#">Save to later</a>
+                          </li>
+                          <li>
+                            <a href="#">See more like this</a>
+                          </li>
+                          <li>
+                            <a href="#">Share</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr>
+              <input type="button" name="next" class="next action-button float-left" value="Next" />
+            </fieldset>
+            <fieldset>
+              <h4>Review</h4>
+              <p>Review the selected produts and modify</p>
+              <div class="star">
+                <span>
+                  <i class="fa fa-star"></i>
+                </span>
+                <span>
+                  <i class="fa fa-star"></i>
+                </span>
+                <span>
+                  <i class="fa fa-star"></i>
+                </span>
+                <span>
+                  <i class="fa fa-star"></i>
+                </span>
+                <span>
+                  <i class="fa fa-star"></i>
+                </span>
+              </div>
+              <form action="">
+                <div class="form-group m-t-10">
+                  <label for="review">Your Review:</label>
+                  <textarea class="form-control" rows="5" id="comment" placeholder="Your Review"></textarea>
+                </div>
+                <h4 class="info-text">Your Info :</h4>
+                <div class="form-group m-t-25">
+                  <label for="name">Name :</label>
+                  <input type="text" class="form-control" id="name" placeholder="Name">
+                </div>
+                <div class="form-group">
+                  <label for="city">City :</label>
+                  <input type="text" class="form-control" id="city" placeholder="City">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email :</label>
+                  <input type="email" class="form-control" id="email" placeholder="Email">
+                </div>
+                <button class="btn btn-primary primary-btn"> Submit </button>
+              </form>
+              <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+              <input type="button" name="next" class="next action-button" value="Next" />
+            </fieldset>
+            <fieldset>
+              <div class="row">
+                <div class="col-md-6">
+                  <h5 class="payment-text">Payment Form1</h5>
+                  <form class="payment-detail">
+                    <label for="name" class="control-label m-t-25">Full name (on the card)</label>
+                    <div class="input-group p-b-20">
+                      <span class="input-group-addon">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                      </span>
+                      <input id="name" type="name" class="form-control" name="name">
+                    </div>
+                    <label for="name" class="control-label">Card Number</label>
+                    <div class="input-group p-b-20">
+                      <span class="input-group-addon">
+                        <i class="fa fa-credit-card-alt" aria-hidden="true"></i>
+                      </span>
+                      <input id="name" type="name" class="form-control" name="name">
+                    </div>
+                    <div class="row">
+                      <div class="col-md-8">
+                        <div class="form-group">
+                          <label for="Expiration">Expiration</label>
+                          <input type="text" class="form-control" id="Expiration" placeholder="MM">
+                          <br>
+                          <input type="text" class="form-control" id="Expiration" placeholder="YY">
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label for="cvv">CVV <i class="fa fa-question-circle" aria-hidden="true"></i>
+                          </label>
+                          <input type="text" class="form-control" id="cvv">
+                        </div>
+                      </div>
+                    </div>
+                    <button class="btn btn-primary confirm-btn"> Confirm </button>
+                  </form>
+                </div>
+                <div class="col-md-6">
+                  <h5 class="payment-text">Payment Form2</h5>
+                  <div class="payment-detail">
+                    <ul class="nav nav-tabs payment-form2">
+                      <li class="active">
+                        <a data-toggle="tab" href="#creditcard">
+                          <i class="fa fa-credit-card-alt" aria-hidden="true"></i> Credit Card </a>
+                      </li>
+                      <li>
+                        <a data-toggle="tab" href="#paypal">
+                          <i class="fa fa-paypal" aria-hidden="true"></i> PayPal </a>
+                      </li>
+                      <li>
+                        <a data-toggle="tab" href="#bank">
+                          <i class="fa fa-university" aria-hidden="true"></i> Bank </a>
+                      </li>
+                    </ul>
+                    <div class="tab-content">
+                      <div id="creditcard" class="tab-pane fade in active">
+                        <div class="alert alert-success m-t-10">
+                          <p>Some text success or error</p>
+                        </div>
+                        <form>
+                          <div class="form-group">
+                            <label for="name">Full name (on the card)</label>
+                            <input type="text" class="form-control" id="name">
+                          </div>
+                          <label for="name" class="control-label">Card Number</label>
+                          <div class="input-group p-b-20">
+                            <input id="name" type="name" class="form-control" name="name">
+                            <span class="input-group-addon">
+                              <i class="fa fa-credit-card-alt" aria-hidden="true"></i>
+                              <i class="fa fa-cc-paypal" aria-hidden="true"></i>
+                              <i class="fa fa-money" aria-hidden="true"></i>
+                            </span>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-8">
+                              <div class="form-group">
+                                <label for="Expiration">Expiration</label>
+                                <div class="display-inlineflex">
+                                  <input type="text" class="col-md-6 form-control" id="Expirationmonth" placeholder="MM">
+                                  <input type="text" class="col-md-6 form-control" id="Expirationyear" placeholder="YY">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <div class="form-group">
+                                <label for="cvv">CVV <i class="fa fa-question-circle" aria-hidden="true"></i>
+                                </label>
+                                <input type="text" class="form-control" id="cvv">
+                              </div>
+                            </div>
+                          </div>
+                          <button class="btn btn-primary confirm-btn"> Confirm </button>
+                        </form>
+                      </div>
+                      <div id="paypal" class="tab-pane fade">
+                        <form class=" m-t-10">
+                          <div class="form-group">
+                            <label for="name">Full name</label>
+                            <input type="text" class="form-control" id="name">
+                          </div>
+                          <label for="name" class="control-label">Paypal Number</label>
+                          <div class="input-group p-b-20">
+                            <input id="name" type="name" class="form-control" name="name">
+                            <span class="input-group-addon">
+                              <i class="fa fa-credit-card-alt" aria-hidden="true"></i>
+                              <i class="fa fa-cc-paypal" aria-hidden="true"></i>
+                              <i class="fa fa-money" aria-hidden="true"></i>
+                            </span>
+                          </div>
+                          <button class="btn btn-primary confirm-btn"> Confirm </button>
+                        </form>
+                      </div>
+                      <div id="bank" class="tab-pane fade">
+                        <form class=" m-t-10">
+                          <div class="form-group">
+                            <label for="name">Full name</label>
+                            <input type="text" class="form-control" id="name">
+                          </div>
+                          <label for="name" class="control-label">Account Number</label>
+                          <div class="input-group p-b-20">
+                            <input id="name" type="name" class="form-control" name="name">
+                            <span class="input-group-addon">
+                              <i class="fa fa-credit-card-alt" aria-hidden="true"></i>
+                              <i class="fa fa-cc-paypal" aria-hidden="true"></i>
+                              <i class="fa fa-money" aria-hidden="true"></i>
+                            </span>
+                          </div>
+                          <button class="btn btn-primary confirm-btn"> Confirm </button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <input type="button" name="next" class="next action-button" value="Next" />
+              <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+            </fieldset>
+            <fieldset>
+              <div class="row">
+                <div class="col-md-6 pdn-left-0">
+                  <h4>
+                    <b>Summary</b>
+                  </h4>
+                  <address class="address"> Dharmendra Rathor <br> Plat no. F-14 ground floor <br> Shatabdi enclave, sector 49 <br> Noida, UTTRA PRADESH 201301 </address>
+                </div>
+                <div class="col-md-6 p-r-0">
+                  <table class="table table-bordered">
+                    <tr>
+                      <td colspan="2">
+                        <b>Order Summary</b>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Item(s) Subtotal:</td>
+                      <td>
+                        <i class="fa fa-inr"></i> 253.00
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Shipping:</td>
+                      <td>
+                        <i class="fa fa-inr"></i> 77.00
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Total:</td>
+                      <td>
+                        <i class="fa fa-inr"></i> 330.00
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <strong>Grand Total:</strong>
+                      </td>
+                      <td>
+                        <strong>
+                          <i class="fa fa-inr"></i> 330.00 </strong>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div class="row summery-border">
+                <div class="col-md-3">
+                  <img src="images/book.jpg" alt="book" class="img-responsive book-size">
+                </div>
+                <div class="col-md-9 pdn-left-0">
+                  <div>
+                    <h4 class="title"> Magic pratice book for kids (4 book + 1 Pen + 10 refills + 1 grip) pratice copy book reusable calligraphyMagic pratice book for kids (4 book + 1 pen + 10 refills + 1 grip) pratice copy book reusable calligraphy </h4>
+                    <p>
+                      <small>In stock</small>
+                    </p>
+                    <p>Gift options not available. <a href="#">more view</a>
+                    </p>
+                    <p>Return window closed on 06-Dec-2022</p>
+                    <p>
+                      <i class="fa fa-inr"></i> 253.00
+                    </p>
+                    <div class="row">
+                      <div class="col-md-4">
+                        <select class="form-control">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                        </select>
+                      </div>
+                      <div class="col-md-8">
+                        <ul class="user-option">
+                          <li>
+                            <a href="#">Delete</a>
+                          </li>
+                          <li>
+                            <a href="#">Save to later</a>
+                          </li>
+                          <li>
+                            <a href="#">See more like this</a>
+                          </li>
+                          <li>
+                            <a href="#">Share</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <input type="button" name="next" class="next action-button submit" value="Submit" />
+              <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+            </fieldset>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="js/index.js" type="text/javascript"></script>
+  </body>
+</html>

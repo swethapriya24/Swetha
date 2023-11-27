@@ -1,0 +1,400 @@
+body {
+font-family: 'Poppins';
+}
+.menu-background{
+background-color:#fff;
+margin-bottom:0px;
+}
+.logo-align img{
+height: 40px;
+}
+.logo-align{
+padding-top: 7px;
+}
+.search-box{
+border-radius: 50px;
+margin-top: 10px;
+}
+
+.search-box:hover .search-txt{
+width: 200px;
+padding: 0 6px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+.search-box:hover .search-btn{
+background: #fff;
+}
+
+
+.search-btn{
+color:#000;
+border-radius: 50%;
+
+}
+
+.search-txt{
+border:none;
+outline: none;
+line-height: 30px;
+width: 0;
+transition: width 400ms;
+
+}
+.profile,
+.profile:hover,
+.profile:focus{
+background-color: #000!important;
+border-radius: 50%;
+padding: 6px!important;
+color: #fff!important;
+margin-top: 10px;
+}
+.navbar-right li{
+padding-right:15px;
+}
+.dropdown:hover .dropdown-menu{
+display: block;
+}
+.dropdown-menu{
+margin-top: 0;
+}
+      /* carousel */
+.p-l-0{
+padding-left: 0!important;
+}
+
+
+.carousel,
+.item,
+.active {
+height: 100%;
+}
+
+.carousel-inner {
+height: 100%;
+background: #000;
+}
+.carousel-caption p {
+font-size: 25px;
+background-color: #fff;
+color: #000;
+font-weight: 500;
+border: 2px solid #3949AB;
+padding: 5px 50px;
+border-radius: 10px;
+transform: scale(0.94);
+animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+@keyframes scale {
+100% {
+transform: scale(1);
+}
+}
+.carousel-caption{padding-bottom:80px;}
+
+.fill {
+width: 100%;
+height: 370px;
+background-position: center;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+background-size: cover;
+-o-background-size: cover;
+opacity:0.4;
+}
+
+/**
+* Change animation duration
+*/
+.animated {
+-webkit-animation-duration: 1.5s;
+animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fadeInRight {
+from {
+opacity: 0;
+-webkit-transform: translate3d(100px, 0, 0);
+transform: translate3d(100px, 0, 0);
+}
+
+to {
+opacity: 1;
+-webkit-transform: none;
+transform: none;
+}
+}
+
+@keyframes fadeInRight {
+from {
+opacity: 0;
+-webkit-transform: translate3d(100px, 0, 0);
+transform: translate3d(100px, 0, 0);
+}
+
+to {
+opacity: 1;
+-webkit-transform: none;
+transform: none;
+}
+}
+
+.fadeInRight {
+-webkit-animation-name: fadeInRight;
+animation-name: fadeInRight;
+}
+
+
+
+
+
+/* wizard  */
+
+#product-detail fieldset:not(:first-of-type) {
+display: none
+}
+
+
+.action-button {
+width: 80px;
+background: #364bb2;
+color: white;
+border: 0 none;
+border-radius: 5px;
+cursor: pointer;
+padding: 5px 5px;
+margin: 10px 0px 10px 5px;
+float: right;
+}
+
+.action-button:hover,
+.action-button:focus {
+background-color: #311B92
+}
+
+.action-button-previous {
+width: 100px;
+background: #337ab7;
+color: white;
+border: 0 none;
+border-radius: 5px;
+cursor: pointer;
+padding: 5px 5px;
+margin: 10px 5px 10px 0px;
+}
+
+
+
+#progressbar {
+margin-bottom: 30px;
+overflow: hidden;
+color: lightgrey
+}
+
+#progressbar .active div {
+background-color: #000;
+color: #fff;
+}
+
+#progressbar li {
+list-style-type: none;
+}
+
+#progressbar li div {
+font-size: 15px;
+width: 25%;
+position: relative;
+font-weight: 400;
+border: 2px solid #000;
+color: #000;
+text-align: center;
+width: 65%;
+margin: 0 auto;
+margin-bottom: 15px;
+padding: 5px;
+border-radius: 4px;
+}
+
+#progressbar li.active:before,
+#progressbar li.active:after {
+background: #673AB7
+}
+
+
+
+.section-align {
+background-color: #f5f5f5;
+padding: 50px 20px;
+}
+/* wizard  */
+.boxshadow {
+box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+background-color: #fff;
+padding: 15px 30px;
+border: 1px solid #e1e1e1;
+}
+.mrg-top-3em {
+margin-top: 3em;
+}
+.book-size {
+height: 150px;
+}
+.pdn-left-0 {
+padding-left: 0px;
+}
+.title {
+font-weight: 600;
+font-size: 16px;
+}
+.user-option {
+padding: 0;
+}
+.user-option li {
+list-style-type: none;
+margin-right: 10px;
+font-size: 12px;
+float:left;
+font-weight: 600;
+}
+.user-option li a{
+
+text-decoration: none;
+}
+.float-left{
+float: left;
+}
+.star .fa{
+color: #FDD835;
+font-size: 16px;
+}
+.m-t-10{
+margin-top: 10px;
+}
+.info-text{
+font-weight: 600;
+}
+.m-t-25{
+margin-top:25px;
+}
+.primary-btn{
+background-color: #364bb2;
+}
+.payment-detail{
+border: 1px solid #ccc;
+padding: 10px 15px;
+border-radius: 5px;
+}
+.p-b-20{
+padding-bottom: 20px;
+}
+
+.payment-form2 a{
+color:#1E88E5;
+}
+.payment-form2 .active a{
+background-color:#1E88E5!important;
+color:#fff!important;
+}
+.display-inlineflex{
+display: -webkit-inline-flex;
+}
+.confirm-btn{
+background-color:#1E88E5;
+color:#fff;
+}
+.payment-text{
+font-weight: 600;
+}
+.summery-border{
+border:1px solid #ccc;
+padding:10px;
+}
+.p-r-0{
+padding-right:0px;
+}
+#Expirationmonth{
+border-top-right-radius: 0px;
+border-bottom-right-radius: 0px;
+}
+#Expirationyear{
+border-top-left-radius: 0px;
+border-bottom-left-radius: 0px;
+}
+.address{
+line-height: 1.7;
+}
+
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:focus,
+.navbar-default .navbar-nav>.open>a:hover{
+background-color: transparent;
+}
+.form-control:focus{
+box-shadow: none;
+border:1px solid #ccc;
+}
+@media (min-width: 768px) {
+    .navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    }      
+}
+@media (max-width: 768px)
+{
+    .carousel-caption p{
+    font-size: 13px;
+    padding: 5px 10px;
+    }
+    .fill{
+    height: 200px;
+    }
+    #progressbar{
+    padding-left: 5px;
+    padding-right: 0px;
+    }
+    #progressbar li{
+    float: left;
+    padding-right: 15px;
+    }
+    #progressbar li div{
+    width: 100%;
+    }
+
+    .p-lr-0{
+    padding-left: 0px;
+    padding-right: 0px;
+    }
+    .section-align{
+    padding: 35px 0px;
+    }
+    .navbar-right .fa-bell{
+    font-size: 20px;
+    }
+    .search-btn .fa-search{
+    font-size: 17px;
+    padding-left: 10px;
+    }
+    .icon-mobile{
+    display: flex!important;
+    float: right;
+    padding-right: 18px;
+    }
+    .logo-align img{
+    height: 30px;
+    }
+    .icon-mobile >li>a {
+    padding: 10px 0px;
+    }
+    .icon-mobile .dropdown-menu{
+    right: 0;
+    left:auto;
+    }
+    .search-box{
+    margin-top: 5px;
+    }
+    .carousel-caption{
+    top:35%;
+    }
+}   
